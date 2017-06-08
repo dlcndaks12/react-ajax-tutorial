@@ -1,0 +1,26 @@
+.Warning-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.Warning {
+  visibility: hidden;
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  transition: all .4s;
+}
+.Warning.active {
+  visibility: visible;
+  opacity: 1;
+}
